@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import { AppContainer } from './App.ts';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Bethlehem Bread Co.</h1>
-    </div>
+    <AppContainer>
+      <h1>Bethlehem Bread Co.</h1>
+    </AppContainer>
   );
 }
 
