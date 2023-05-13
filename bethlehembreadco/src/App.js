@@ -1,12 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-const LLCname = __('Bethlehem Bread Co.');
 
 function App() {
   return (
     <div className="App">
-     <h1>{LLCname}</h1>
+     <h1>Bethlehem Bread Co.</h1>
     </div>
   );
 }
