@@ -11,9 +11,12 @@ export const NavList = styled.ul`
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
+  padding-left: 0px;
 `;
 
-export const NavListItem = styled.li``;
+export const NavListItem = styled.li`
+  width: 10%;
+`;
 
 export const NavLink = styled.link`
   text-decoration: none;

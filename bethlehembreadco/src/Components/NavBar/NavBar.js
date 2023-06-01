@@ -1,27 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { NavContainer, Nav, NavList, NavListItem } from "./styles.ts";
 
+const LinkStyle = {
+  textDecoration: "none",
+  fontSize: "10px",
+  fontFamily: "arial",
+  color: "#CCCCCC",
+};
+
+//FIXME: Will need to add styling to the links differently here
 export const Navbar = () => {
+  //TODO: Get the activeLink color working
+  const activeStyle = {
+    color: "black",
+  };
   return (
     <NavContainer>
       <Nav>
         <NavList>
           <NavListItem>
-            <Link to="/home" style={{ textDecoration: "none" }}>
-              Home
-            </Link>
+            <NavLink to="/home" style={LinkStyle} activeStyle={activeStyle}>
+              HOME
+            </NavLink>
           </NavListItem>
           <NavListItem>
-            <Link to="/blog" style={{ textDecoration: "none" }}>
-              Blog
-            </Link>
+            <NavLink to="/blog" style={LinkStyle} activeStyle={activeStyle}>
+              BLOG
+            </NavLink>
           </NavListItem>
           <NavListItem>
-            <Link to="/about" style={{ textDecoration: "none" }}>
-              About Me
-            </Link>
+            <NavLink to="/about" style={LinkStyle} activeStyle={activeStyle}>
+              ABOUT
+            </NavLink>
           </NavListItem>
         </NavList>
       </Nav>
