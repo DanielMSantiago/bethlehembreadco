@@ -35,6 +35,11 @@ export const Navbar = () => {
               ABOUT
             </NavLink>
           </NavListItem>
+          <NavListItem>
+            <NavLink to="/store" style={LinkStyle} activeStyle={activeStyle}>
+              STORE
+            </NavLink>
+          </NavListItem>
         </NavList>
       </Nav>
     </NavContainer>
